@@ -20,6 +20,9 @@ app = dash.Dash(__name__,
                 external_stylesheets=[dbc.themes.BOOTSTRAP],
                 serve_locally = False)
 
+# add to deploy in Heroku
+server = app.server
+
 df.result_timestamp = pd.to_datetime(df.result_timestamp)
 
 months = df.month.sort_values().unique()
