@@ -26,9 +26,9 @@ navBar = html.Nav(children=[
         dcc.Link('Details',
                 href='/details',
                 className='link',),
-        dcc.Link('Model',
-                href='/model',
-                className='link',),
+        # dcc.Link('Model',
+        #        href='/model',
+        #        className='link',),
                 ],
         style={
         'display': 'flex',
