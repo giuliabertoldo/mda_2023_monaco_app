@@ -14,7 +14,6 @@ import plotly.express as px
 
 from data import df
 
-
 app = dash.Dash(__name__,title='MDA_project', external_stylesheets=[dbc.themes.BOOTSTRAP],serve_locally = False,use_pages=True)
 
 server = app.server
@@ -23,12 +22,9 @@ navBar = html.Nav(children=[
         dcc.Link('Overview',
                 href='/',
                 className='link',),
-        dcc.Link('Details',
+         dcc.Link('Details',
                 href='/details',
-                className='link',),
-        dcc.Link('Model',
-                href='/model',
-                className='link',),
+                className='link',)
                 ],
         style={
         'display': 'flex',
